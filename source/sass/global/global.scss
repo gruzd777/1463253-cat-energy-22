@@ -3,7 +3,7 @@
 }
 
 .page-body {
-  min-width: 1200px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -11,9 +11,9 @@
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  background: var(--form-gray);
+  background: $basic-white;
   background-position: top center;
-  color: var(--basic-black);
+  color: $basic-black;
 
   min-height: 100%;
 
@@ -32,6 +32,6 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 280px;
   margin: 0 auto;
 }
