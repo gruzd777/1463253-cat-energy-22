@@ -1,6 +1,9 @@
-.container__flex {
-  display: flex;
-  justify-content: space-between;
+.page-header {
+  &__flex-container {
+    display: flex;
+    align-items: center;
+    outline: 5px solid yellowgreen;
+    outline-offset: -5px;
+  }
 }
-
 
