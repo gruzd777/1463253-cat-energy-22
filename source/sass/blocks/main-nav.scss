@@ -5,11 +5,39 @@
 .main-nav__toggle {
   position: absolute;
   width: 24px;
-  height: 18px;
+  height: 2px;
   display: block;
   cursor: pointer;
   right: 20px;
   top: -30px;
+  border: none;
+  background: $basic-black;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    display: block;
+    cursor: pointer;
+    right: 0px;
+    top: -7px;
+    border: none;
+    background: $basic-black;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    display: block;
+    cursor: pointer;
+    right: 0px;
+    top: 7px;
+    border: none;
+    background: $basic-black;
+    position: absolute;
+  }
 }
 
 .main-nav__list {
@@ -28,7 +56,7 @@
   text-align: center;
   text-transform: uppercase;
   display: block;
-  padding: 22px 0 24px 0;
+  padding: 22px 0 23px 0;
   font-family: "Oswald-m";
   font-style: normal;
   font-size: 20px;
