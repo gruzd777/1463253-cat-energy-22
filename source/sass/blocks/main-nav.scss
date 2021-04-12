@@ -5,39 +5,47 @@
 .main-nav__toggle {
   position: absolute;
   width: 24px;
-  height: 2px;
+  height: 18px;
   display: block;
   cursor: pointer;
-  right: 20px;
-  top: -30px;
+  right: 21px;
+  top: -34px;
   border: none;
-  background: $basic-black;
+  background: $basic-white;
+}
 
-  &::before {
-    content: "";
-    width: 24px;
-    height: 2px;
-    display: block;
-    cursor: pointer;
-    right: 0px;
-    top: -7px;
-    border: none;
-    background: $basic-black;
-    position: absolute;
-  }
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
 
-  &::after {
-    content: "";
-    width: 24px;
-    height: 2px;
-    display: block;
-    cursor: pointer;
-    right: 0px;
-    top: 7px;
-    border: none;
-    background: $basic-black;
-    position: absolute;
-  }
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-45deg);
 }
 
 .main-nav__list {
@@ -48,6 +56,10 @@
 
 .main-nav__item {
   border-top: 1px solid #E6E6E6;
+
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
 }
 
 
