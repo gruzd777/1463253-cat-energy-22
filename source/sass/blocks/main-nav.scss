@@ -1,0 +1,92 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  display: block;
+  cursor: pointer;
+  right: 21px;
+  top: -34px;
+  border: none;
+  background: $basic-white;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  border-top: 1px solid #E6E6E6;
+
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}
+
+
+.main-nav__link {
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 22px 0 23px 0;
+  font-family: "Oswald-m";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    border: none;
+    margin: 0 35px 0 0;
+  }
+
+  .main-nav__link {
+    padding: 0;
+  }
+}
+
