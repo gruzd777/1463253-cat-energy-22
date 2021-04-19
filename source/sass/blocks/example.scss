@@ -1,0 +1,66 @@
+.example {
+  padding: 0 20px;
+  background: #EAEAEA;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0 0 33px 0;
+  padding-top: 27px;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 25px 0;
+}
+
+.example__results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__notes {
+  margin: 0;
+}
+
+.example__notes--style {
+  margin: 0 0 34px 0;
+  width: 124px;
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__notes--style-2 {
+  font-size: 14px;
+  line-height: 20px;
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__little {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 87px;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: #EAEAEA;
+  color: #444444;
+  text-transform: none;
+}
