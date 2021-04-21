@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Подбор программы: Кэт энерджи</title>
 </head>
 
@@ -64,23 +65,23 @@
               </p>
             </div>
 
-<!-- Круглые чекбоксы -->
+<!-- Радио батон -->
 
             <div class="main-form__group main-form__group--wrapper">
               <ul class="main-form__list">
-                <li class="main-form__item">
-                  <input class="main-form__input-check visually-hidden" type="checkbox" name="Похудение" id="small"
+                <li class="main-form__item radio">
+                  <input class="main-form__input-check visually-hidden radio__input" type="radio" name="program" id="small" value="Похудение"
                     checked>
-                  <label class="main-form__check-label" for="small">Похудение</label>
+                  <label class="main-form__check-label radio__label" for="small">Похудение</label>
                 </li>
-                <li class="main-form__item">
-                  <input class="main-form__input-check visually-hidden" type="checkbox" name="Набор массы" id="fat">
-                  <label class="main-form__check-label" for="fat">Набор массы</label>
+                <li class="main-form__item radio">
+                  <input class="main-form__input-check visually-hidden radio__input" type="radio" name="program" id="fat" value="Набор массы">
+                  <label class="main-form__check-label radio__label" for="fat">Набор массы</label>
                 </li>
-                <li class="main-form__item">
-                  <input class="main-form__input-check visually-hidden" type="checkbox" name="Нужен совет"
-                    id="underfined">
-                  <label class="main-form__check-label" for="underfined">Не знаю (нужен Ваш совет)</label>
+                <li class="main-form__item radio">
+                  <input class="main-form__input-check visually-hidden radio__input" type="radio" name="program"
+                    id="underfined" value="Неизвестно">
+                  <label class="main-form__check-label radio__label" for="underfined">Не знаю (нужен Ваш совет)</label>
                 </li>
               </ul>
             </div>

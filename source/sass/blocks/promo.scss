@@ -1,6 +1,5 @@
 .promo {
   margin: 0 auto 20px auto;
-  background: url(../img/promo-cat.jpg) no-repeat top center;
   position: relative;
 
   &::before {
@@ -10,7 +9,7 @@
     width: 100%;
     height: 302px;
     position: absolute;
-    background: rgba(104, 183, 56, 0.85);
+    background: url(../img/green-cat.jpg) no-repeat 0 0;
   }
 
   &::after {
