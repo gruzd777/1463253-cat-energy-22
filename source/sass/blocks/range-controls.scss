@@ -1,0 +1,29 @@
+.range-controls {
+  width: 228px;
+  margin: 0 auto 40px auto;
+}
+
+.range-controls__scale {
+  width: 84px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  margin: 0 auto;
+}
+
+.range-controls__bar {
+  width: 35px;
+  height: 6px;
+  background: #68B738;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.range-controls__toggle {
+
+}

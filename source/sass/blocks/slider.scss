@@ -1,0 +1,28 @@
+.slider {
+  width: auto;
+  margin: 0 0 27px 0;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+  width: auto;
+  height: 240px;
+}
+
+.slider__item-1 {
+  background: url(../img/before-mobile.png) no-repeat;
+}
+
+.slider__item-2 {
+  background: url(../img/after-mobile.png) no-repeat;
+}
+
+.slider__item--current {
+  display: block;
+}
