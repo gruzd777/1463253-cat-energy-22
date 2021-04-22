@@ -1,0 +1,28 @@
+.location {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.location__row {
+  margin: 0;
+
+  &--welcome {
+    width: 125px;
+  }
+
+  &--address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    width: 139px;
+  }
+}
