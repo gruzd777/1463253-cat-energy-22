@@ -4,15 +4,20 @@
 }
 
 .page-footer__logo {
-
+  padding: 36px 0 28px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
 }
 
 .page-footer__social {
-  padding: 20px 0;
+  padding: 19px 0;
   border-bottom: 1px solid #D9D9D9;
 }
 
 
 .page-footer__copyright {
-  padding: 28px 0 32px 0;
+  padding: 20px 0 32px 0;
 }
