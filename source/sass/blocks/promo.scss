@@ -20,8 +20,13 @@
     width: 280px;
     height: 270px;
     position: absolute;
-    background: url(../img/promo-cup.png) no-repeat;
+    background: url(../img/promo-cup-m@1x.png) no-repeat;
     transform: translateX(-50%);
+
+    @media (min-resolution: 2dppx) {
+      background: url(../img/promo-cup-m@2x.png) no-repeat;
+      background-size: contain;
+    }
   }
 }
 
@@ -63,10 +68,27 @@
 @media (min-width: $tablet) {
   .promo {
     background: $basic-white;
+    padding: 64px 0 0 117px;
+
     &::before {
       display: none;
     }
 
+    &::after {
+      content: "";
+      top: 265px;
+      left: 50%;
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      background: url(../img/promo-cup-t@1x.png) no-repeat;
+      transform: translateX(-50%);
+
+      @media (min-resolution: 2dppx) {
+        background: url(../img/promo-cup-t@2x.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
 
   .promo__title {
@@ -75,8 +97,9 @@
     line-height: 60px;
     width: 414px;
     text-align: left;
-    margin: 0;
+    margin: 0 0 42px 0;
     padding: 0;
+    z-index: 10;
   }
 
   .promo__subtitle {
@@ -85,6 +108,17 @@
     line-height: 20px;
     width: 285px;
     text-align: left;
+    margin: 0 0 48px 0;
+    z-index: 10;
   }
 
+  .promo__button {
+    margin: 0 0 0 -5px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 54px;
+    position: relative;
+    z-index: 10;
+  }
 }
