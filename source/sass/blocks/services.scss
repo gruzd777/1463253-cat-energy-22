@@ -94,3 +94,34 @@ padding: 0 20px;
     background: url(../img/line-icon.svg) no-repeat 0 0;
   }
 }
+
+@media (min-width: $tablet) {
+  .services {
+    padding: 0 30px;
+  }
+
+  .services__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 77px 0 0 0;
+    margin-bottom: 24px;
+  }
+
+  .services__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 52px;
+    margin-bottom: 48px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .services__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 52px;
+  }
+}
