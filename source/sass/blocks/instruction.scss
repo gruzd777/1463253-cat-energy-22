@@ -55,3 +55,70 @@
   }
 }
 
+
+@media (min-width: $tablet) {
+  .instruction {
+    padding: 0 30px;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 73px 0;
+    padding: 15px 0 0 0;
+  }
+
+  .instruction__list {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction__item {
+    width: 250px;
+    min-height: 280px;
+    padding: 0;
+    margin: 0 90px 27px 0;
+    position: relative;
+  }
+
+  .instruction__item:last-child {
+    margin: 0 0 27px 0;
+  }
+
+  .instruction__item::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .instruction__item::after {
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    top: 0;
+    right: 0;
+  }
+
+  .instruction__item--leafs::after {
+    content: "1";
+
+  }
+
+  .instruction__item--water::after {
+    content: "2";
+  }
+
+  .instruction__item--knife::after {
+    content: "3";
+  }
+
+  .instruction__item--time::after {
+    content: "4";
+  }
+}

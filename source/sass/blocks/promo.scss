@@ -64,11 +64,20 @@
   display: block;
 }
 
+.promo__button:hover,
+.promo__button:focus {
+  background-color: #5EAA2F;
+}
+
+.promo__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 @media (min-width: $tablet) {
   .promo {
     background: $basic-white;
-    padding: 64px 0 526px 117px;
+    padding: 64px 0 506px 117px;
 
     &::before {
       display: none;
