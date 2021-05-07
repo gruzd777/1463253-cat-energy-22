@@ -59,6 +59,7 @@
 @media (min-width: $tablet) {
   .instruction {
     padding: 0 30px;
+    margin-bottom: 15px;
   }
 
   .instruction__title {
@@ -73,14 +74,40 @@
     width: auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+  }
+
+  .instruction__list::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background: #E6E6E6;
+    bottom: 28px;
+    left: -30px;
+    position: absolute;
   }
 
   .instruction__item {
-    width: 250px;
+    width: 246px;
     min-height: 280px;
-    padding: 0;
-    margin: 0 90px 27px 0;
+    padding: 115px 0 0 0;
+    margin: 0 0 36px 0;
     position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  .instruction__item:nth-child(odd) {
+    margin-right: 138px;
+  }
+
+  @media (min-width: 1075px) {
+    .instruction__item:nth-child(even) {
+      margin-right: 138px;
+    }
+
   }
 
   .instruction__item:last-child {
@@ -99,10 +126,12 @@
   .instruction__item::after {
     position: absolute;
     font-size: 280px;
-    line-height: 280px;
+    line-height: 201px;
     color: #F2F2F2;
     top: 0;
-    right: 0;
+    right: 20px;
+    font-family: 'Oswald';
+    z-index: -1;
   }
 
   .instruction__item--leafs::after {
