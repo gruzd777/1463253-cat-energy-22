@@ -28,6 +28,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
+      port: 80,
       baseDir: 'source'
     },
     cors: true,

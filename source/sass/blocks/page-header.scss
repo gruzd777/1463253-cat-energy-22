@@ -23,11 +23,17 @@
 
 @media (min-width: $tablet) {
   .page-header {
-    padding-top: 10px;
-    padding-left: 200px;
+    padding: 42px 30px 5px 30px;
+
     &::after {
       display: none;
     }
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 24px;
+    left: 30px;
   }
 }
 

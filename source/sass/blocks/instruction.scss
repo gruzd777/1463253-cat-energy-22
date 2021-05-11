@@ -10,9 +10,10 @@
 }
 
 .instruction__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  width: 280px;
 }
 
 .instruction__item {
@@ -54,3 +55,99 @@
   }
 }
 
+
+@media (min-width: $tablet) {
+  .instruction {
+    padding: 0 30px;
+    margin-bottom: 15px;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 73px 0;
+    padding: 15px 0 0 0;
+  }
+
+  .instruction__list {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .instruction__list::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background: #E6E6E6;
+    bottom: 28px;
+    left: -30px;
+    position: absolute;
+  }
+
+  .instruction__item {
+    width: 246px;
+    min-height: 280px;
+    padding: 115px 0 0 0;
+    margin: 0 0 36px 0;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  .instruction__item:nth-child(odd) {
+    margin-right: 138px;
+  }
+
+  @media (min-width: 1075px) {
+    .instruction__item:nth-child(even) {
+      margin-right: 138px;
+    }
+
+  }
+
+  .instruction__item:last-child {
+    margin: 0 0 27px 0;
+  }
+
+  .instruction__item::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .instruction__item::after {
+    position: absolute;
+    font-size: 280px;
+    line-height: 201px;
+    color: #F2F2F2;
+    top: 0;
+    right: 20px;
+    font-family: 'Oswald';
+    z-index: -1;
+  }
+
+  .instruction__item--leafs::after {
+    content: "1";
+
+  }
+
+  .instruction__item--water::after {
+    content: "2";
+  }
+
+  .instruction__item--knife::after {
+    content: "3";
+  }
+
+  .instruction__item--time::after {
+    content: "4";
+  }
+}
