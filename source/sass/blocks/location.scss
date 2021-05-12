@@ -26,3 +26,27 @@
     width: 139px;
   }
 }
+
+@media (min-width: $tablet) {
+  .location {
+    padding: 66px 72px 51px 71px;
+    outline: 5px solid paleturquoise;
+    outline-offset: -5px;
+  }
+
+  .location br {
+    display: none;
+  }
+
+  .location__row--welcome {
+    font-size: 20px;
+    line-height: 21px;
+    color: #111111;
+  }
+
+  .location__row--address {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+  }
+}

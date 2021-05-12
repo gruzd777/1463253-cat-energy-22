@@ -51,6 +51,10 @@
   margin: 0 0 42px 0;
 }
 
+.example__notes--style-2 br {
+  display: none;
+}
+
 .example__little {
   display: block;
   font-size: 12px;
@@ -104,7 +108,13 @@
 
   .example__notes--style-2 {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
+    text-align: right;
+    padding-top: 7px;
+  }
+
+  .example__notes--style-2 br {
+    display: block;
   }
 
   .example__little {
