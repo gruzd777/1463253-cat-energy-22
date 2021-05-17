@@ -51,6 +51,10 @@
   margin: 0 0 42px 0;
 }
 
+.example__notes--style-2 br {
+  display: none;
+}
+
 .example__little {
   display: block;
   font-size: 12px;
@@ -73,6 +77,10 @@
     background: white;
   }
 
+  .example__results {
+    padding: 0;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
@@ -88,5 +96,36 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     width: 680px;
+    margin: 0 0 55px 0;
+  }
+
+  .example__notes--style {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    margin-right: 39px;
+  }
+
+  .example__notes--style-2 {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    padding-top: 7px;
+  }
+
+  .example__notes--style-2 br {
+    display: block;
+  }
+
+  .example__little {
+    background: white;
+    width: 135px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 60px;
+  }
+
+  .example__little br {
+    display: none;
   }
 }

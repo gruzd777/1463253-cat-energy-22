@@ -21,6 +21,14 @@
 
 }
 
+.social-list__svg {
+  fill: black;
+}
+
+.social-list__link:hover .social-list__svg {
+  fill: red;
+}
+
 .social-list__link--vk {
 
 }
