@@ -21,16 +21,26 @@
 
 }
 
-.social-list__svg {
-  fill: black;
+.social-list__link--vk .social-list__svg,
+.social-list__link--inst .social-list__svg {
+  fill: #666666;
 }
 
-.social-list__link:hover .social-list__svg {
+.social-list__link--vk:hover .social-list__svg,
+.social-list__link--inst:hover .social-list__svg  {
   fill: red;
 }
+.social-list__link--fb .social-list__svg {
+  stroke: #666666;
+}
+.social-list__link--fb:hover .social-list__svg {
+  stroke: red;
+}
+
+
 
 .social-list__link--vk {
-
+  
 }
 
 .social-list__link--inst {
