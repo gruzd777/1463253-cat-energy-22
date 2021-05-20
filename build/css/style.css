@@ -856,7 +856,7 @@ a {
   max-width: 62px; }
 
 .card__content {
-  width: 50%; }
+  width: 60%; }
 
 .card__title {
   font-size: 16px;
@@ -864,14 +864,22 @@ a {
   color: #222222;
   margin: 0;
   width: 85px;
+  padding-left: 29px;
   text-transform: uppercase;
-  padding-top: 30px; }
+  padding-top: 20px;
+  margin-bottom: 11px; }
 
 .card__table {
-  width: 100%; }
+  width: 100%;
+  padding-left: 26px; }
 
 .card__column {
-  width: 50%; }
+  width: 50%;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444; }
 
 .card__column:first-child {
   text-align: left; }
@@ -882,17 +890,26 @@ a {
 .card__button {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 11px auto 0px 0; }
 
 .card__link {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-align: center;
   background: #68B738;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF; }
+
+.catalog-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald";
+  margin: 0;
+  padding: 27px 0 0 0;
+  margin: 0 20px;
+  margin-bottom: 40px; }
 
 .main-form__list {
   margin: 0;
